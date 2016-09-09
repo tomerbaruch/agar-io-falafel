@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agar.IO Tomer</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no">
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+    <div id="gameAreaWrapper">
+        <div id="status">Players: 0</div>
+        <div class="chatbox" id="chatbox">
+            <ul id="chatList" class="chat-list"></ul>
+            <input id="chatInput" type="text" class="chat-input" placeholder="Chat here..." />
+        </div>
+		<img id="scream" width="10" height="10" src="f.png" alt="The Scream">	
+		<img id="pita" width="10" height="10" src="pita.png" alt="The Scream">	
+		<img id="humus" width="10" height="10" src="humus.jpg" alt="humus">	
+        <canvas tabindex="1" id="cvs"></canvas>
+    </div>
+    <div id="startMenuWrapper">
+        <div id="startMenu">
+            <p>העגר של תומר</p>
+            <input type="text" tabindex="0" autofocus placeholder="Enter your name here" id="playerNameInput" />
+            <b class="input-error">Nick must be alphanumeric characters only!</b>
+            <br />
+            <button id="startButton">התחל</button>
+            <button id="settingsButton">הגדרות</button>
+            <br />
+            <div id="settings">
+                <h3>הגדרות</h3>
+                <ul>
+                    <label><input id="visBord" type="checkbox">הראה גבולות</label>
+                    <label><input id="showMass" type="checkbox">הראה מאסה</label>
+                    <br />
+                    <label><input id="continuity" type="checkbox">המשך להזיז את העכבר גם כשהעכבר מחוץ למסך</label>
+                </ul>
+            </div>
+            <div id="instructions">
+                <h3>חוקים</h3>
+                <ul>
+                    <li>זזים עם העכבר</li>
+                    <li>תאכל מלא</li>
+                    <li>מסה של שחקן היא כמות האוכל שהוא אוכל</li>
+                    <li>המטרה: תנסה להיות שמן ככל האפשר ולאכול את יריבך</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
